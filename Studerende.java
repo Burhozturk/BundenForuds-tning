@@ -4,42 +4,164 @@
  * and open the template in the editor.
  */
 package bundenforud;
-//Opretter variabler som kun kan ses fra klassen
-
-
-/**
- *
- * @author burhan
- */
 public class Studerende {
-    //Opretter variabler som kun er tilgængelig for klassen
-    private int alder;
-    private String navn;
-    //Constructor uden argumenter
-    Studerende()
-    {
-        System.out.println("Et studerende er oprettet");
+
+
+
+    // Deklarer variabler som skal bruges i klassen, der beskriver de studerende og giver dem default værdier
+
+    private String navn = "";
+
+    private int alder = 0;
+
+    private String by = "";
+
+    private String skole = "";
+
+
+
+    // Default no-arg constructor som bliver kaldt når objektet skal oprettes
+
+    public Studerende() {
+
+
+
     }
-    //Constructor med en argument
-    Studerende(int alder)
-    {
-        this.alder=alder;
+
+
+
+    // Laver en constructor med arguments så man kan lave objekter af studerende og give dem navn, alder, by, skole
+
+    public Studerende(String navn, int alder, String by, String skole)  {
+
+        this.navn = navn;
+
+        this.alder = alder;
+
+        this.by = by;
+
+        this.skole = skole;
+
     }
-    //Constructor med en argument
-    Studerende(String navn)
-    {
-        this.navn=navn;
+
+
+
+    // Laver en metode der returnere navn som String
+
+    String getNavn() {
+
+        return navn;
+
     }
-    //En metode uden argument
-    public void Syg()
-    {
-            
-        System.out.println("Studerende er syg");
+
+
+
+    // Laver en metode der returnere alder som int
+
+    int getAlder()  {
+
+        return alder;
+
     }
-    
-    public void Aflevering()
-    {
-        System.out.println("Studerende har afleveret opgaven");
+
+
+
+    // Laver en metode der returnere by som String
+
+    String getBy()   {
+
+        return by;
+
     }
-    
+
+
+
+    // Laver en metode der returnere skole som String
+
+    String getSkole() {
+
+        return skole;
+
+    }
+
+}public class Studerende {
+
+
+
+    // Deklarer variabler som skal bruges i klassen, der beskriver de studerende og giver dem default værdier
+
+    private String navn = "";
+
+    private int alder = 0;
+
+    private String by = "";
+
+    private String skole = "";
+
+
+
+    // Default no-arg constructor som bliver kaldt når objektet skal oprettes
+
+    public Studerende() {
+
+
+
+    }
+
+
+
+    // Laver en constructor med arguments så man kan lave objekter af studerende og give dem navn, alder, by, skole
+
+    public Studerende(String navn, int alder, String by, String skole)  {
+
+        this.navn = navn;
+
+        this.alder = alder;
+
+        this.by = by;
+
+        this.skole = skole;
+
+    }
+
+
+
+    // Laver en metode der returnere navn som String
+
+    String getNavn() {
+
+        return navn;
+
+    }
+
+
+
+    // Laver en metode der returnere alder som int
+
+    int getAlder()  {
+
+        return alder;
+
+    }
+
+
+
+    // Laver en metode der returnere by som String
+
+    String getBy()   {
+
+        return by;
+
+    }
+
+
+
+    // Laver en metode der returnere skole som String
+
+    String getSkole() {
+
+        return skole;
+
+    }
+
 }
