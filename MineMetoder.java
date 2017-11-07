@@ -3,176 +3,68 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bundenforud;
-//Importerer klasser
-import java.util.Random;
-
+package bundenforudnew;
+import static java.lang.Math.random;
+import java.util.Date;
 import java.util.Scanner;
-
-
-
+import java.util.Random;
+/**
+ *
+ * @author burhan
+ */
 public class MineMetoder {
-
-
-
-    // Default no-arg constructor som bliver kaldt når objektet skal oprettes
-
-    public MineMetoder() {
-
-
-
-    }
-
-
-
-    // Laver en getWhile void metode
-
-    void getWhile() {
-
-
-
-        // Denne while løkke udskriver tal fra 0 til 10
-
-        int i = 0;
-
-        while (i <= 10) {
-
-            System.out.print(i + " ");
-
-            i++;
-
+    //Metode
+    public void forlokke(){
+        //For løkke som kører fra 0 til 5
+        for(int a=0;a<5;a++)
+        {
+            System.out.println("Udskriver denne ");
         }
-
-
-
     }
-
-
-
-    // Laver en getFor void metode
-
-    void getFor()  {
-
-
-
-        // Denne for løkke udskriver tal fra 0 til 10
-
-        for (int i = 0; i <= 10; i++)   {
-
-            System.out.print(i + " ");
-
-        }
-
-
-
-    }
-
-
-
-    //Laver en getRandom void metode
-
-    void getRandom()    {
-
-
-
-        // Laver et random objekt af Random klassen
-
-        Random random = new Random();
-
-
-
-        // Udskriver et tilfældigt tal mellem 0 og 10
-
-        System.out.println(random.nextInt(11));
-
-
-
-    }
-
-
-
-    //Laver en getScanner void metode
-
-    void getScanner()   {
-
-
-
-        // Lavet et input objekt af klassen Scanner
-
-        Scanner input = new Scanner(System.in);
-
-
-
-        // Gemmer brugerens input i en String variabel
-
-        String brugerensInput = input.next();
-
-
-
-        // Udskriver hvad brugeren har skrevet
-
-        System.out.println("Du har skrevet: " + brugerensInput);
-
-
-
-
-
-    }
-
-
-
-    // Laver en getArray void metode
-
-    void getArray() {
-
-        // Laver et 5 * 5 array af datatypen int
-
-        int[][] matrix = new int[5][5];
-
-
-
-        // Skifter til næste række i arrayet
-
-        for (int i = 0; i < 5; i++) {
-
-            // Udfylder den ene række
-
-            for (int j = 0; j < 5; j++) {
-
-                // Laver et random objekt af klassen Random
-
-                Random random = new Random();
-
-
-
-                // Gemmer et tal mellem 0 og 1 i matrix arrayet
-
-                matrix[i][j] = random.nextInt(2);
-
-
-
-                // Udskriver tallet i matrix
-
-                System.out.print(matrix[i][j]);
-
-
-
-            }
-
-            // Laver en ny linje
-
-            System.out.println();
-
-        }
-
-    }
-
-
-
-}
+    int b=0;
     
+    //While løkke som kører så længe argumentet holder
+    public void whilelokke()
+    {
+    while(b<10)
+    {
+        
+        System.out.println("a");
+        b++;
+                
+    }
+    }
+    //En metode
+    public void Scanner()
+    {
+        //Scanner objekt som muliggør input
+        Scanner input=new Scanner(System.in);
+        //Indtastningen bliver gemt som integer
+        int tal=input.nextInt();
+        System.out.println("Du har skrevet tal" +tal);
+                
+    }
+    //En metode
+    public void date()
+    {
+        //Opretter en date klasse
+      Date date = new Date();
+
+      //Viser timen
+      System.out.println(date.getTime());
+
+    }
+    //en metode
+   
+    public void random()
+    {
+        //Random klasse
+        Random rand=new Random();
+        //Opretter en r som har 40 random nummers,og som starter fra 1
+        int r=rand.nextInt(40)+1;
+        System.out.print(r);
+    }
     
-    
-    
+
     
 }
